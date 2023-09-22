@@ -21,7 +21,7 @@ const Home = () => {
     closePopup();
   };
 
-  const deadlineDate = new Date('September 19, 2023 23:59:59').getTime();
+  const deadlineDate = new Date('October 1, 2023 23:59:59').getTime();
 
   const [countdown, setCountdown] = useState({
     days: 0,
