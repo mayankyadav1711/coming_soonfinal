@@ -45,7 +45,7 @@ const Gita = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(getNextSlok, 3 * 60 * 60 * 1000); // 24 hours
+    const timer = setInterval(getNextSlok,  10 * 1000); // 24 hours
     return () => clearInterval(timer);
   }, [slokNumber]);
 
