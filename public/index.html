@@ -49,12 +49,12 @@
     e.preventDefault();
 });
 
-// Prevent key shortcuts
 document.addEventListener("keydown", function(e) {
     if ((e.ctrlKey && e.shiftKey && e.key === "C") || // Ctrl + Shift + C
         (e.ctrlKey && e.key === "s") ||               // Ctrl + S
         (e.ctrlKey && e.key === "p") ||               // Ctrl + P
-        (e.ctrlKey && e.key === "u")) {               // Ctrl + U
+        (e.ctrlKey && e.key === "u") ||               // Ctrl + U
+        (e.key === "F12")) {                         // F12
         e.preventDefault();
     }
 });
